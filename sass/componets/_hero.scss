@@ -1,0 +1,32 @@
+/* Секція section-hero */
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: $footer-bg-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main_page/bg_hero.jpg);
+  background-position: center;
+
+  &__title {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: $main-bg-color;
+    @extend %hero__title;
+  }
+
+  &__button {
+    padding: 10px 32px;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin bordered($width: 1px, $type: solid, $color: black) {
+  border: $width $type $color;
+}
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin textStyle($fontFamyly, $weight, $size, $height, $spacing) {
+  font-family: $fontFamyly;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: calc($height/$size);
+  letter-spacing: $spacing;
+}

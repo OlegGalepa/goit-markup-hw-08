@@ -1,0 +1,27 @@
+/* section client */
+
+.client {
+  @include centeredFlex;
+  gap: 30px;
+
+  &__link {
+    @include centeredFlex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: $icon-color;
+    outline: none;
+    text-decoration: none;
+    @include transition(border-color);
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+  &__icon {
+    @include transition(fill);
+  }
+}

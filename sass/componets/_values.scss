@@ -1,0 +1,44 @@
+/* секція section-values */
+
+.values__list {
+  display: flex;
+}
+
+.values__item {
+  flex-basis: calc((100% - 90px) / 3);
+
+  &::before {
+    display: block;
+    content: "";
+    /* width: 270px; */
+    height: 120px;
+    background-color: #f5f4fa;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@each $iconName in $icons {
+  .values__item--#{$iconName}::before {
+    background-image: url(/images/main_page/#{$iconName}.svg);
+  }
+}
+
+.values__name {
+  margin-bottom: 10px;
+  @include textStyle($fontFamyly, 700, 14px, 16px, $spacing);
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.values__description {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $third-text-color;
+}

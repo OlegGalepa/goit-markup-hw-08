@@ -1,0 +1,41 @@
+.header {
+  background-color: $main-bg-color;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    @include centeredFlex;
+    height: 80px;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $third-text-color;
+    @include textStyle($fontFamyly, $weight, $size, $height, 0.02em);
+    fill: currentColor;
+    text-decoration: none;
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

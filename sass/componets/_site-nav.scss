@@ -1,0 +1,39 @@
+/* site-nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  @include textStyle($fontFamyly, $weight, $size, $height, 0.02em);
+  text-decoration: none;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--curent {
+    color: $accent-color;
+    &::after {
+      content: "";
+      display: block;
+      opacity: 1;
+      height: 4px;
+      position: relative;
+      border-radius: 2px;
+      top: 31px;
+      background-color: $accent-color;
+    }
+  }
+}

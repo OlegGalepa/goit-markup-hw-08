@@ -1,0 +1,26 @@
+/* section advantages  */
+
+.advantages {
+  padding-top: 0;
+
+  &__item {
+    display: flex;
+  }
+
+  &__wrap {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    padding: 27px;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    @extend %primery-text;
+    text-align: center;
+  }
+}

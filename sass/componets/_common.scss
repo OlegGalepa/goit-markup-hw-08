@@ -1,0 +1,71 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: $main-bg-color;
+  fill: $icon-color;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  background-color: red;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-color: teal;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-color: gray;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    background-color: yellow;
+  }
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.titles {
+  margin-bottom: 50px;
+  font-weight: 700;
+  height: 42px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: $secondary-text-color;
+  cursor: pointer;
+}

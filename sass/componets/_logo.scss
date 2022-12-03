@@ -1,0 +1,16 @@
+.logo {
+  color: $primary-logo-color;
+  font-family: "Raleway";
+  line-height: 1.19;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &--inverse {
+    color: $inverse-logo-color;
+  }
+  &__text {
+    color: $secondary-logo-color;
+  }
+}
