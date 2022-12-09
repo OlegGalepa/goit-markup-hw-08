@@ -46,7 +46,7 @@
 
 @each $iconName in $icons {
   .values__item--#{$iconName}::before {
-    background-image: url(/images/main_page/#{$iconName}.svg);
+    background-image: url(../images/main_page/#{$iconName}.svg);
   }
 }
 

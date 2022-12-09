@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/main_page/hero/imgsm@1x.jpg);
+    url(../images/main_page/hero/imgsm@1x.jpg);
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -19,7 +19,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/main_page/hero/imgsm@2x.jpg);
+      url(../images/main_page/hero/imgsm@2x.jpg);
   }
 
   @include mq(tablet) {
@@ -35,7 +35,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/main_page/hero/imgmd@2x.jpg);
+        url(../images/main_page/hero/imgmd@2x.jpg);
     }
   }
   @include mq(desktop) {
@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./images/main_page/hero/imglg@1x.jpg);
+      url(../images/main_page/hero/imglg@1x.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -51,7 +51,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./images/main_page/hero/imglg@2x.jpg);
+        url(../images/main_page/hero/imglg@2x.jpg);
     }
   }
 
