@@ -4,25 +4,40 @@
 
   &__container {
     @include centeredFlex;
-    height: 80px;
+    height: 60px;
+
+    @include mq(tablet) {
+      height: 80px;
+    }
   }
 }
 
 .header-contacts {
-  display: flex;
+  @include mq(phone-only) {
+    display: none;
+  }
   margin-left: auto;
 
-  &__item:not(:first-child) {
-    margin-left: 50px;
+  @include mq(desktop) {
+    display: flex;
+
+    &__item:not(:first-child) {
+      margin-left: 50px;
+    }
   }
 
   &__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     color: $third-text-color;
     @include textStyle($fontFamyly, $weight, $size, $height, 0.02em);
+
+    @include mq(tablet-only) {
+      @include textStyle($fontFamyly, $weight, 12px, 14px, 0.02em);
+    }
+
     fill: currentColor;
     text-decoration: none;
     @include transition(color);

@@ -2,6 +2,7 @@
 
 .backdrop {
   position: fixed;
+
   top: 0;
 
   left: 0;
@@ -23,8 +24,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  width: 528px;
-  height: 581px;
+  width: 95%;
+
+  // height: 581px;
+
+  @include mq(phone) {
+    width: 450px;
+  }
+  @include mq(desktop) {
+    width: 528px;
+  }
 
   background-color: $main-bg-color;
 
@@ -54,9 +63,13 @@
 }
 
 .modal-form {
-  margin: 40px 39px 40px 41px;
+  margin: 40px;
 
   &__title {
+    @include mq(tablet-only) {
+      @include textStyle($fontFamyly, 700, 20px, 30px, $spacing);
+    }
+
     @include textStyle($fontFamyly, 700, 20px, 23px, $spacing);
     margin-bottom: 12px;
     text-align: center;
@@ -130,7 +143,11 @@
     display: flex;
     align-items: center;
     color: $third-text-color;
+
     @extend %modal-form;
+    @include mq(tablet-only) {
+      @include textStyle($fontFamyly, 400, 12px, 14px, $spacing);
+    }
 
     &--out {
       -webkit-appearance: none;
@@ -152,7 +169,11 @@
 
   &__link {
     margin-left: 3px;
+
     @extend %modal-form;
+    @include mq(tablet-only) {
+      @include textStyle($fontFamyly, 400, 12px, 14px, $spacing);
+    }
     color: $accent-color;
   }
   &__icon--check {

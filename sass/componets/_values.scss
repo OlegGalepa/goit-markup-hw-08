@@ -1,12 +1,35 @@
-/* секція section-values */
+// готова
 
 .values__list {
-  display: flex;
+  @include mq(tablet) {
+    display: flex;
+  }
+
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+  }
 }
 
 .values__item {
-  flex-basis: calc((100% - 90px) / 3);
+  padding-bottom: 30px;
+  width: 100%;
 
+  @include mq(tablet) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(n + 3) {
+      padding-bottom: 0px;
+    }
+  }
+  @include mq(desktop) {
+    flex-basis: calc((100% - 90px) / 3);
+    padding-bottom: 0px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
   &::before {
     display: block;
     content: "";
@@ -18,9 +41,6 @@
     background-position: center;
     border-radius: 4px;
     margin-bottom: 30px;
-  }
-  &:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -35,6 +55,10 @@
   @include textStyle($fontFamyly, 700, 14px, 16px, $spacing);
   text-transform: uppercase;
   color: $primary-text-color;
+
+  @include mq(phone-only) {
+    text-align: center;
+  }
 }
 
 .values__description {

@@ -1,12 +1,16 @@
-/* section client */
-
 .client {
   @include centeredFlex;
   gap: 30px;
 
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__link {
     @include centeredFlex;
     width: 170px;
+
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -14,6 +18,15 @@
     outline: none;
     text-decoration: none;
     @include transition(border-color);
+
+    @include mq(tablet-only) {
+      width: 226px;
+      flex-basis: calc((100% - 3 * 15px) / 3);
+    }
+    @include mq(phone-only) {
+      width: 210px;
+      flex-basis: calc((100% - 2 * 15px) / 2);
+    }
 
     &:hover,
     &:focus {

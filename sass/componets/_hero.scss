@@ -1,29 +1,82 @@
-/* Секція section-hero */
-
 .hero {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  height: 600px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  // height: 600px;
+  max-width: 1600px;
   background: $footer-bg-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/main_page/bg_hero.jpg);
+    url(/images/main_page/hero/imgsm@1x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/main_page/hero/imgsm@2x.jpg);
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/main_page/hero/imgmd@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/main_page/hero/imgmd@2x.jpg);
+    }
+  }
+  @include mq(desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/main_page/hero/imglg@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/main_page/hero/imglg@2x.jpg);
+    }
+  }
+
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
-    width: 696px;
+    @extend %hero__title;
     margin: 0 auto;
     margin-bottom: 30px;
     color: $main-bg-color;
-    @extend %hero__title;
+    @include mq(tablet-only) {
+      max-width: 360px;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+    }
+    @include mq(desktop) {
+      max-width: 696px;
+    }
   }
 
   &__button {

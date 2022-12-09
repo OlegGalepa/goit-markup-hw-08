@@ -1,0 +1,107 @@
+.menu-toggle {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 15px;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  fill: currentColor;
+
+  @include mq(tablet) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  z-index: 9;
+  margin-left: auto;
+  background-color: $main-bg-color;
+  @include mq(tablet) {
+    display: none;
+  }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0%);
+  }
+}
+.icon-close-menu {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+
+.mobile-nav {
+  &_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-text-color;
+    @include textStyle($fontFamyly, 500, 40px, 47px, 0.02em);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__item:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+.mobile-contacts {
+  &__link {
+    text-decoration: none;
+    @include textStyle($fontFamyly, 500, 34px, 40px, 0.02em);
+    color: $accent-color;
+
+    &--size {
+      text-decoration: none;
+      color: $third-text-color;
+
+      @include textStyle($fontFamyly, 500, 24px, 28px, 0.02em);
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__item {
+    margin-top: 306px;
+    &:not(:first-child) {
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+  }
+}
+.mobile-socialnets {
+  display: flex;
+  justify-content: center;
+  &__link {
+    padding: 10px;
+    @include textStyle($fontFamyly, 500, 18px, 22px, 0.02em);
+    color: $accent-color;
+  }
+  &__item + &__item {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

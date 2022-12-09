@@ -64,6 +64,21 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="icon-open-menu"
+            width="40px"
+            height="40px"
+            aria-label="Мобільне меню"
+          >
+            <use href="./images/main_page/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -222,7 +237,11 @@
             <li class="advantages__item">
               <div class="advantages__wrap">
                 <img
-                  src="./images/main_page/img1.jpg"
+                  srcset="
+                    images\main_page\advantages\img@1x-1.jpg 1x,
+                    images\main_page\advantages\img@2x-1.jpg 2x
+                  "
+                  src="images\main_page\advantages\img@1x-1.jpg"
                   alt="робота за комп'ютером"
                   width="370"
                 />
@@ -230,14 +249,26 @@
               </div>
               <div class="advantages__wrap">
                 <img
-                  src="images/main_page/img2.jpg"
+                  srcset="
+                    images\main_page\advantages\img@1x-2.jpg 1x,
+                    images\main_page\advantages\img@2x-2.jpg 2x
+                  "
+                  src="images\main_page\advantages\img@1x-2.jpg"
                   alt="синхронізація ПК і телефону"
                   width="370"
                 />
                 <p class="advantages__text">Мобільні додатки</p>
               </div>
               <div class="advantages__wrap">
-                <img src="images/main_page/img3.jpg" alt="Спектр" width="370" />
+                <img
+                  srcset="
+                    images\main_page\advantages\img@1x-3.jpg 1x,
+                    images\main_page\advantages\img@2x-3.jpg 2x
+                  "
+                  src="images\main_page\advantages\img@1x-3.jpg"
+                  alt="Спектр"
+                  width="370"
+                />
                 <p class="advantages__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -250,9 +281,18 @@
           <ul class="team__list list">
             <li class="team__item">
               <img
-                src="images/main_page/product_designer.jpg"
+                srcset="
+                  images\main_page\team\img_270-min.jpg 270w,
+                  images\main_page\team\img_354-min.jpg 354w,
+                  images\main_page\team\img_450-min.jpg 450w,
+                  images\main_page\team\img_540-min.jpg 540w,
+                  images\main_page\team\img_708-min.jpg 708w,
+                  images\main_page\team\img_900-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images\main_page\team\img_270-min.jpg"
                 alt="Product Designer"
-                width="270"
+                width="450"
               />
               <div class="team__wrap">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -317,12 +357,21 @@
                 </ul>
               </div>
             </li>
-
+            <!-- заміна розміру фото -->
             <li class="team__item">
               <img
-                src="images/main_page/frontend_developer.jpg"
+                srcset="
+                  images\main_page\team\img_270-1-min.jpg 270w,
+                  images\main_page\team\img_354-1-min.jpg 354w,
+                  images\main_page\team\img_450-1-min.jpg 450w,
+                  images\main_page\team\img_540-1-min.jpg 540w,
+                  images\main_page\team\img_708-1-min.jpg 708w,
+                  images\main_page\team\img_900-1-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images\main_page\team\img_270-1-min.jpg"
                 alt="Frontend Developer"
-                width="270"
+                width="450"
               />
               <div class="team__wrap">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -389,9 +438,18 @@
             </li>
             <li class="team__item">
               <img
-                src="images/main_page/marketing.jpg"
+                srcset="
+                  images\main_page\team\img_270-2-min.jpg 270w,
+                  images\main_page\team\img_354-2-min.jpg 354w,
+                  images\main_page\team\img_450-2-min.jpg 450w,
+                  images\main_page\team\img_540-2-min.jpg 540w,
+                  images\main_page\team\img_708-2-min.jpg 708w,
+                  images\main_page\team\img_900-2-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images\main_page\team\img_270-2-min.jpg"
                 alt="Marketing"
-                width="270"
+                width="450"
               />
               <div class="team__wrap">
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -458,9 +516,18 @@
             </li>
             <li class="team__item">
               <img
-                src="images/main_page/ui_designer.jpg"
+                srcset="
+                  images\main_page\team\img_270-3-min.jpg 270w,
+                  images\main_page\team\img_354-3-min.jpg 354w,
+                  images\main_page\team\img_450-3-min.jpg 450w,
+                  images\main_page\team\img_540-3-min.jpg 540w,
+                  images\main_page\team\img_708-3-min.jpg 708w,
+                  images\main_page\team\img_900-3-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images\main_page\team\img_270-3-min.jpg"
                 alt="UI Designer"
-                width="270"
+                width="450"
               />
               <div class="team__wrap">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -604,102 +671,109 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-wrap">
-          <a class="logo logo--inverse" href="index.html">
-            <span class="logo__text">Web</span>Studio
-          </a>
-          <address id="contacts">
-            <ul class="footer-addres list">
-              <li class="footer-addres__item">
+        <div class="footer__container--tablet">
+          <div class="footer-wrap">
+            <a class="logo logo--inverse" href="index.html">
+              <span class="logo__text">Web</span>Studio
+            </a>
+            <address id="contacts">
+              <ul class="footer-addres list">
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link"
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                    href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link footer-addres__link--color"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link footer-addres__link--color"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-wrap--tablet">
+            <h3 class="footer__title">приєднуйтесь</h3>
+            <ul class="footer-socialnets list">
+              <li>
                 <a
-                  class="footer-addres__link"
+                  href="https://www.instagram.com/"
+                  class="footer-socialnets__link"
                   target="_blank"
                   rel="nofollow noreferrer noopener"
-                  href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
+              <li>
                 <a
-                  class="footer-addres__link footer-addres__link--color"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                  href="https://twitter.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
                 >
+                  <svg width="20px" height="20px">
+                    <use href="./images/main_page/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
+              <li>
                 <a
-                  class="footer-addres__link footer-addres__link--color"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  href="https://www.facebook.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
                 >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="footer-socialnets list">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <h3 class="footer__title">Підпишіться на розсилку</h3>
           <form action="" class="footer-form">
-            <label for="email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="footer-form__input"
-                placeholder="E-mail"
-            /></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="footer-form__input"
+              placeholder="E-mail"
+            />
             <button type="submit" class="footer-form__button button">
               Підписатися
               <svg class="footer-form__icon" width="24px" height="24px">
@@ -710,6 +784,96 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="icon-close-menu"
+          width="40px"
+          height="40px"
+          aria-label="Мобільне меню закриття"
+        >
+          <use href="./images/main_page/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-nav_list">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#contacts" class="mobile-nav__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link--size"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socialnets list">
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.instagram.com/"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://twitter.com/"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.facebook.com/"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.linkedin.com/"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

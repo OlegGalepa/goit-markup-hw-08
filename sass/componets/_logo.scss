@@ -7,6 +7,11 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
+  @include mq(tablet-only) {
+    font-size: 26px;
+    line-height: calc(28 / 26);
+  }
+
   &--inverse {
     color: $inverse-logo-color;
   }
