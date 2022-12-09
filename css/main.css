@@ -311,8 +311,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./images/main_page/hero/imgmd@1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/main_page/hero/imgmd@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main_page/hero/imgmd@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main_page/hero/imgmd@1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1300,18 +1300,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .mobile-socialnets__link {
-  padding: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+.mobile-socialnets__item {
+  padding: 10px;
+}
+.mobile-socialnets__item:first-child {
+  padding-left: 0px;
 }
 .mobile-socialnets__item + .mobile-socialnets__item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
