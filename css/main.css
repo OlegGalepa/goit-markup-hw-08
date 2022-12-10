@@ -80,6 +80,7 @@ body {
 }
 
 .container {
+  outline: 2px solid green;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -892,6 +893,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767.98px) {
+  .portfolio-carts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 80%;
+    margin-left: 0px;
+    gap: 15px;
+  }
+}
 .portfolio-carts__button {
   padding: 6px 22px;
   background-color: #f5f4fa;
@@ -926,20 +939,36 @@ body {
 }
 
 .card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
 }
-.card-set__item {
-  margin-right: 30px;
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-set__item {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 3);
+  }
 }
 .card-set__container {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-set__container--tablet {
+    padding-bottom: 56px;
+  }
 }
 .card-set__link {
   display: block;
@@ -954,11 +983,21 @@ body {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-set__item:nth-child(n+4) {
-  margin-top: 30px;
+@media screen and (max-width: 1199.98px) {
+  .card-set__item:nth-child(n+3) {
+    margin-top: 30px;
+  }
+  .card-set__item:first-child {
+    margin-bottom: 30px;
+  }
 }
-.card-set__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .card-set__item:nth-child(n+4) {
+    margin-top: 30px;
+  }
+  .card-set__item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 .card-set__wrap {
   position: relative;
@@ -1302,6 +1341,7 @@ body {
   display: flex;
 }
 .mobile-socialnets__link {
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;

@@ -30,7 +30,9 @@
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+              <a href="./index.html" class="site-nav__link site-nav__link"
+                >Студія</a
+              >
             </li>
             <li class="site-nav__item">
               <a
@@ -62,6 +64,21 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="icon-open-menu"
+            width="40px"
+            height="40px"
+            aria-label="Мобільне меню"
+          >
+            <use href="./images/main_page/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -108,9 +125,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/laptop.jpg"
+                    srcset="
+                      images\portfolio\img_354-min.jpg   354w,
+                      images\portfolio\img_370-min.jpg   370w,
+                      images\portfolio\img_450-min.jpg   450w,
+                      images\portfolio\img_708-min.jpg   708w,
+                      images\portfolio\img_740-min.jpg   740w,
+                      images\portfolio\img_900-min.jpg   900w,
+                      images\portfolio\img_1062-min.jpg 1062w,
+                      images\portfolio\img_1110-min.jpg 1110w,
+                      images\portfolio\img_1350-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-min.jpg"
+                    width="450"
                     alt="ноутбук"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -118,7 +147,7 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="card-set__container">
+                <div class="card-set__container card-set__container--tablet">
                   <h2 class="card-set__title">Технокряк</h2>
                   <p class="card-set__paregraph">Веб-сайт</p>
                 </div>
@@ -133,9 +162,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/bascetball.jpg"
+                    srcset="
+                      images\portfolio\img_354-1-min.jpg   354w,
+                      images\portfolio\img_370-1-min.jpg   370w,
+                      images\portfolio\img_450-1-min.jpg   450w,
+                      images\portfolio\img_708-1-min.jpg   708w,
+                      images\portfolio\img_740-1-min.jpg   740w,
+                      images\portfolio\img_900-1-min.jpg   900w,
+                      images\portfolio\img_1062-1-min.jpg 1062w,
+                      images\portfolio\img_1110-1-min.jpg 1110w,
+                      images\portfolio\img_1350-1-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-1-min.jpg"
+                    width="450"
                     alt="баскетбол"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -161,9 +202,21 @@
                 <div class="card-set__wrap">
                   <img
                     class="img-link cards-inf"
-                    src="images/portfolio/seafood.jpg"
+                    srcset="
+                      images\portfolio\img_354-2-min.jpg   354w,
+                      images\portfolio\img_370-2-min.jpg   370w,
+                      images\portfolio\img_450-2-min.jpg   450w,
+                      images\portfolio\img_708-2-min.jpg   708w,
+                      images\portfolio\img_740-2-min.jpg   740w,
+                      images\portfolio\img_900-2-min.jpg   900w,
+                      images\portfolio\img_1062-2-min.jpg 1062w,
+                      images\portfolio\img_1110-2-min.jpg 1110w,
+                      images\portfolio\img_1350-2-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-2-min.jpg"
+                    width="450"
                     alt="риба"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -186,9 +239,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/prime.jpg"
+                    srcset="
+                      images\portfolio\img_354-3-min.jpg   354w,
+                      images\portfolio\img_370-3-min.jpg   370w,
+                      images\portfolio\img_450-3-min.jpg   450w,
+                      images\portfolio\img_708-3-min.jpg   708w,
+                      images\portfolio\img_740-3-min.jpg   740w,
+                      images\portfolio\img_900-3-min.jpg   900w,
+                      images\portfolio\img_1062-3-min.jpg 1062w,
+                      images\portfolio\img_1110-3-min.jpg 1110w,
+                      images\portfolio\img_1350-3-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-3-min.jpg"
+                    width="450"
                     alt="навушники"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -211,9 +276,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/boxes.jpg"
+                    srcset="
+                      images\portfolio\img_354-4-min.jpg   354w,
+                      images\portfolio\img_370-4-min.jpg   370w,
+                      images\portfolio\img_450-4-min.jpg   450w,
+                      images\portfolio\img_708-4-min.jpg   708w,
+                      images\portfolio\img_740-4-min.jpg   740w,
+                      images\portfolio\img_900-4-min.jpg   900w,
+                      images\portfolio\img_1062-4-min.jpg 1062w,
+                      images\portfolio\img_1110-4-min.jpg 1110w,
+                      images\portfolio\img_1350-4-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-4-min.jpg"
+                    width="450"
                     alt="коробки"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,9 +313,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/borders.jpg"
+                    srcset="
+                      images\portfolio\img_354-5-min.jpg   354w,
+                      images\portfolio\img_370-5-min.jpg   370w,
+                      images\portfolio\img_450-5-min.jpg   450w,
+                      images\portfolio\img_708-5-min.jpg   708w,
+                      images\portfolio\img_740-5-min.jpg   740w,
+                      images\portfolio\img_900-5-min.jpg   900w,
+                      images\portfolio\img_1062-5-min.jpg 1062w,
+                      images\portfolio\img_1110-5-min.jpg 1110w,
+                      images\portfolio\img_1350-5-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-5-min.jpg"
+                    width="450"
                     alt="екран"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -261,9 +350,21 @@
               >
                 <div class="card-set__wrap">
                   <img
-                    src="images/portfolio/poster.jpg"
+                    srcset="
+                      images\portfolio\img_354-6-min.jpg   354w,
+                      images\portfolio\img_370-6-min.jpg   370w,
+                      images\portfolio\img_450-6-min.jpg   450w,
+                      images\portfolio\img_708-6-min.jpg   708w,
+                      images\portfolio\img_740-6-min.jpg   740w,
+                      images\portfolio\img_900-6-min.jpg   900w,
+                      images\portfolio\img_1062-6-min.jpg 1062w,
+                      images\portfolio\img_1110-6-min.jpg 1110w,
+                      images\portfolio\img_1350-6-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-6-min.jpg"
+                    width="450"
                     alt="постер"
-                    width="370"
                   />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -285,7 +386,23 @@
                 rel="nofollow noreferrer noopener"
               >
                 <div class="card-set__wrap">
-                  <img src="images/portfolio/lav.jpg" alt="лав" width="370" />
+                  <img
+                    srcset="
+                      images\portfolio\img_354-7-min.jpg   354w,
+                      images\portfolio\img_370-7-min.jpg   370w,
+                      images\portfolio\img_450-7-min.jpg   450w,
+                      images\portfolio\img_708-7-min.jpg   708w,
+                      images\portfolio\img_740-7-min.jpg   740w,
+                      images\portfolio\img_900-7-min.jpg   900w,
+                      images\portfolio\img_1062-7-min.jpg 1062w,
+                      images\portfolio\img_1110-7-min.jpg 1110w,
+                      images\portfolio\img_1350-7-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-7-min.jpg"
+                    width="450"
+                    alt="лав"
+                  />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -306,7 +423,23 @@
                 rel="nofollow noreferrer noopener"
               >
                 <div class="card-set__wrap">
-                  <img src="images/portfolio/busines.jpg" alt="" width="370" />
+                  <img
+                    srcset="
+                      images\portfolio\img_354-8-min.jpg   354w,
+                      images\portfolio\img_370-8-min.jpg   370w,
+                      images\portfolio\img_450-8-min.jpg   450w,
+                      images\portfolio\img_708-8-min.jpg   708w,
+                      images\portfolio\img_740-8-min.jpg   740w,
+                      images\portfolio\img_900-8-min.jpg   900w,
+                      images\portfolio\img_1062-8-min.jpg 1062w,
+                      images\portfolio\img_1110-8-min.jpg 1110w,
+                      images\portfolio\img_1350-8-min.jpg 1350w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images\portfolio\img_354-8-min.jpg"
+                    width="450"
+                    alt=""
+                  />
                   <p class="card-set__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -325,102 +458,109 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-wrap">
-          <a class="logo logo--inverse" href="index.html">
-            <span class="logo__text">Web</span>Studio
-          </a>
-          <address id="contacts">
-            <ul class="footer-addres list">
-              <li class="footer-addres__item">
+        <div class="footer__container--tablet">
+          <div class="footer-wrap">
+            <a class="logo logo--inverse" href="index.html">
+              <span class="logo__text">Web</span>Studio
+            </a>
+            <address id="contacts">
+              <ul class="footer-addres list">
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link"
+                    target="_blank"
+                    rel="nofollow noreferrer noopener"
+                    href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link footer-addres__link--color"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-addres__item">
+                  <a
+                    class="footer-addres__link footer-addres__link--color"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-wrap--tablet">
+            <h3 class="footer__title">приєднуйтесь</h3>
+            <ul class="footer-socialnets list">
+              <li>
                 <a
-                  class="footer-addres__link"
+                  href="https://www.instagram.com/"
+                  class="footer-socialnets__link"
                   target="_blank"
                   rel="nofollow noreferrer noopener"
-                  href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
+              <li>
                 <a
-                  class="footer-addres__link footer-addres__link--color"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                  href="https://twitter.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
                 >
+                  <svg width="20px" height="20px">
+                    <use href="./images/main_page/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-addres__item">
+              <li>
                 <a
-                  class="footer-addres__link footer-addres__link--color"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  href="https://www.facebook.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
                 >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer-socialnets__link"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  <svg width="20px" height="20px">
+                    <use
+                      href="./images/main_page/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <h3 class="footer__title">приєднуйтесь</h3>
-          <ul class="footer-socialnets list">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                class="footer-socialnets__link"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/main_page/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <h3 class="footer__title">Підпишіться на розсилку</h3>
           <form action="" class="footer-form">
-            <label for="email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="footer-form__input"
-                placeholder="E-mail"
-            /></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="footer-form__input"
+              placeholder="E-mail"
+            />
             <button type="submit" class="footer-form__button button">
               Підписатися
               <svg class="footer-form__icon" width="24px" height="24px">
@@ -431,6 +571,96 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="icon-close-menu"
+          width="40px"
+          height="40px"
+          aria-label="Мобільне меню закриття"
+        >
+          <use href="./images/main_page/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-nav_list">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#contacts" class="mobile-nav__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link--size"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socialnets list">
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.instagram.com/"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://twitter.com/"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.facebook.com/"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-socialnets__item">
+            <a
+              class="mobile-socialnets__link"
+              target="_blank"
+              rel="nofollow noreferrer noopener"
+              href="https://www.linkedin.com/"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

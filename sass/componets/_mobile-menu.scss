@@ -97,7 +97,8 @@
   display: flex;
 
   &__link {
-    // padding: 10px;
+    text-decoration: none;
+
     @include textStyle($fontFamyly, 500, 18px, 22px, 0.02em);
     color: $accent-color;
   }
