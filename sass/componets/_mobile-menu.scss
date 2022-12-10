@@ -1,4 +1,5 @@
 .menu-toggle {
+  // position: absolute;
   display: flex;
   padding: 0;
   justify-content: center;
@@ -24,6 +25,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -45,10 +48,14 @@
   top: 21px;
   right: 25px;
 }
+// .mobile-menu {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.mobile-nav {
-  &_list {
-    margin: 0;
+.mobile-menu {
+  margin-bottom: auto;
+  &__list {
     padding: 0;
     list-style-type: none;
   }
@@ -58,6 +65,9 @@
     color: $primary-text-color;
     @include textStyle($fontFamyly, 500, 40px, 47px, 0.02em);
 
+    &--current {
+      color: $accent-color;
+    }
     &:hover,
     &:focus {
       color: $accent-color;
@@ -86,7 +96,6 @@
   }
 
   &__item {
-    margin-top: 306px;
     &:not(:first-child) {
       margin-top: 32px;
       margin-bottom: 64px;
@@ -95,6 +104,7 @@
 }
 .mobile-socialnets {
   display: flex;
+  flex-wrap: wrap;
 
   &__link {
     text-decoration: none;
