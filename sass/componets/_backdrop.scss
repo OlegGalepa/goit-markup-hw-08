@@ -142,6 +142,7 @@
   &__checkbox {
     display: flex;
     align-items: center;
+
     color: $third-text-color;
 
     @extend %modal-form;
@@ -157,6 +158,7 @@
     }
     &--new {
       @include centeredFlex;
+      flex-shrink: 0;
       position: relative;
       width: 16px;
       height: 15px;

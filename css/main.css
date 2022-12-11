@@ -127,6 +127,15 @@ body {
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 1199.98px) {
+  .titles {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+    letter-spacing: 0.03em;
+  }
+}
 
 .button {
   font-weight: 700;
@@ -553,6 +562,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
   width: 16px;
   height: 15px;

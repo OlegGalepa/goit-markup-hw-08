@@ -55,6 +55,9 @@ body {
   @include mq(desktop) {
     margin-bottom: 50px;
   }
+  @include mq(tablet-only) {
+    @include textStyle($fontFamyly, 700, 28px, 33px, $spacing);
+  }
 }
 
 .button {
